@@ -1,0 +1,46 @@
+{
+    "name": "codwelt/codliveditor",
+    "description": "Paquete para laravel capaz de renderizar en realtime codigo html, css y javascript",
+    "type": "php",
+    "license": "MIT",
+    "homepage": "https://codwelt.com/",
+    "prefer-stable": true,
+    "keywords": [
+        "laravel",
+        "codliveditor",
+        "html5",
+        "Css3",
+        "Javascript",
+        "Php",
+        "Instagram",
+        "Api"
+    ],
+    "authors": [
+        {
+            "name": "Sergio Wiesner",
+            "email": "webdev@codwelt.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Codwelt\\codliveditor\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">= 7",
+        "laravel/framework": "^5.6",
+        "nesbot/carbon": "~1.18",
+        "furiosojack/lara-exception": "^1.0.0",
+        "doctrine/dbal": "^2.8",
+        "barryvdh/laravel-dompdf": "^0.8.1",
+        "league/flysystem-aws-s3-v3": "~1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codwelt\\codliveditor\\Providers\\codliveditorProviders"
+            ]
+        }
+    }
+}
