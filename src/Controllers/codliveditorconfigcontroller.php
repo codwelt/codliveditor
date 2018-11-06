@@ -80,7 +80,7 @@ class codliveditorconfigcontroller extends Controller
     public function update(Request $request, $id)
     {
         $config = $this->manager->actualizarConfiguracion($request->all(), $id);
-        return redirect()->route('configuracion.index')->withErrors('Actualizacionón', "notification");
+        return redirect('/codliveditor/configuracion')->withErrors('Actualizacionón', "notification");
     }
 
     /**
